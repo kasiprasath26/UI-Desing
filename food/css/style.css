@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+/****navbar***/
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background: black;
+}
+.navbar .navbar-brand{
+    
+    font-size: 25px;
+    font-weight: 800;
+    color: #29f700 !important;
+}
+#navbarNav a{
+    color: white  !important;
+    border-bottom: 2px solid transparent;
+
+}
+#navbarNav a:hover{
+    border-bottom: 2px solid #29f700 !important;
+}
+#btnsigin
+{
+    background-color: #29f700;
+    border: none;
+    color: black;
+    font-size: medium;
+    border-radius: 10px;
+}
+/****home***/
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url(bg.jfif);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    margin-top: -50px;
+}
+#text-center{
+    font-weight: 800;
+    font-size: 100px;
+    color: white;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: normal;
+}
+section>p{
+    color: white ;
+}
+.input-group{
+    width: 35%;
+    border: none;
+}
+.signin{
+    background-color: #1da102;
+    color: white;
+    font-weight: 100;
+    padding: 8px;
+}
+/****about***/
+#about{
+    background : linear-gradient(to right,#ea1d6f,#eb466b 100%)
+}
+#about h2{
+    color: white;
+    font-weight: 800;
+}
+#about p{
+    color: white;
+    text-align: justify;
+    margin-top: 30px;
+}
+#product{
+    background-color: whitesmoke;
+}
+#product h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#product img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+#contact{
+    background-color: white !important;
+}
+.form-control1{
+    background-color: #1da102;
+    border: none;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
